@@ -7,82 +7,106 @@ header {
     left: 0;
     z-index: 999;
     background-color: gray;
-    -webkit-transition: height 1s;
-    -moz-transition: height 1s;
-    -ms-transition: height 1s;
-    -o-transition: height 1s;
-    transition: height 1s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    transition: height .5s;
 }
 header.smaller {
     height: 50px;
 }
+header #me{
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    width:500px;
+}
+header.smaller #me {
+    padding-top: 0px;
+    line-height: 0px;
+}
+header #icon_area {
+    text-align: center;
+    padding-top: 50px;
+    height:50%;
+    width: 100%
+}
+header.smaller #icon_area {
+    height: 0%
+}
 header #left{
     float: left;
-    width:30%;
-    text-align: left;
-    height:50%;
+    width:35%;
 }
 header #center{
     float: left;
-    width:40%;
-    height:50%;
-    text-align: center;
+    width:30%;
 }
 header #right{
     float: left;
-    width:30%;
-    text-align: right;
-    height:50%;
+    width:35%;
 }
-header.smaller #left{
-    height: 100%;
-}
-header.smaller #right{
-    height: 100%;
-}
-header.smaller #center{
-    height: 100%;
-}
-header #center h1#logo {
+
+header h1#logo {
     font-size: 50px;
     height:50px;
     line-height: 50px;
     padding-top: 0px;
     color: white;
-    margin:0;
     font-weight: 400;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; 
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; 
+    
 }
-header.smaller #center h1#logo {
+header.smaller h1#logo {
     font-size: 30px;
     height:50px;
-    padding-top: 10px;
+    padding-top: 0px;
     line-height: 0px;
 }
-header #center img{
+header img{
     border-radius: 50%;
     height: 200px;
     width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     opacity: 1;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
-header.smaller #center img{
+header.smaller img{
     opacity: 0;
     height: 0%;
     width: 0%;
-    padding:0px;
+    padding: 0px;
 }
 
-bullshit {
-    color:blue;
+div #icon_box {
+/*    border-width: 1px;
+    border-style: solid;
+    border-color: green;*/
+    color:white;
+    width: 200px;
+    height: 200px;
+
+    margin:auto;
+}
+#icon_box p{
+    font-size: 20px;
+    line-height: 0px;
+}
+.material-icons {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+bullshit p {
+    padding-top: 5000px;
 }

@@ -1,15 +1,24 @@
-function init() {
-    window.addEventListener('scroll', function(e){
-        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 100,
-            header = document.querySelector("header");
-        if (distanceY > shrinkOn) {
-            classie.add(header,"smaller");
-        } else {
-            if (classie.has(header,"smaller")) {
-                classie.remove(header,"smaller");
-            }
+var $myWindow = $(window);
+var $myHeader = $("header");
+
+$myWindow.on('scroll', function() {
+
+    if($myWindow.scrollTop()>75) {
+        if(!$myHeader.hasClass("smaller")) {
+            $myHeader.addClass("smaller");
+            $myHeader.removeAttr("style");
         }
-    });
+    }else{
+        if($myHeader.hasClass("smaller")) {
+            $myHeader.removeClass("smaller");
+            $myHeader.height($myWindow.height());
+        }
+    }
+
+});
+
+function init() {
+    $myHeader.height($myWindow.height());
 }
-window.onload = init();
+
+init();
