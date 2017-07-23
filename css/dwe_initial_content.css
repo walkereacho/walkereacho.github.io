@@ -5,7 +5,6 @@ content {
     padding-top: 300px;
     padding-left: 50px;
     padding-right: 50px;
-    color:white;
     margin:auto;
 }
 content h1{
@@ -20,3 +19,17 @@ content h1{
 content p{
     line-height: 20px;
 }
+summary{
+    outline:none;
+    font-size: 24px;
+    font-weight: bold;
+}
+details p{
+    font-size: 16px;
+    font-weight: normal;
+}
+summary p{
+    font-size: 16px;
+    font-weight: bold;
+}
+

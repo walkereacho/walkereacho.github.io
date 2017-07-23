@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Externally hosted -->
 <link href="http://fonts.googleapis.com/css?family=Raleway:200,400,800" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://use.fontawesome.com/e22e382539.js"></script>
+
+<!-- Internally hosted -->
 <link rel="stylesheet" type="text/css" href="css/dwe.css">
 <link rel="stylesheet" type="text/css" href="css/dwe_header.css">
 <link rel="stylesheet" type="text/css" href="css/dwe_initial_content.css"></head>
+<link rel="stylesheet" type="text/css" href="css/dwe_contact.css"></head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
@@ -14,27 +18,26 @@
 		<div id=me>
 			<img src="images/me.jpg"></img>
 			<h1 id=logo>Walker Eacho</h1>
-			<!-- <h4 id=tagline>Software Developer</h4> -->
 		</div>
 		<div id=icon_area>
 			<div id=left>
 				<div id=icon_box>
-					<a id="exp_link"><i class="material-icons">business_center</i></a>
-					<p>Experience</p>
-					</br>
+					<a id="exp_link"><i class="fa fa-briefcase fa-5x" aria-hidden="true"></i>
 
+					<p>Experience</p></a>
 				</div>
 			</div>
 			<div id=center>
 				<div id=icon_box>
-					<i class="material-icons">code</i>
-					<p>Software Projects</p>
+					<a id="soft_link"><i class="fa fa-code fa-5x" aria-hidden="true"></i>
+
+					<p>Software Projects</p></a>
 				</div>
 			</div>
 			<div id=right>
 				<div id=icon_box>
-					<i class="material-icons">message</i>
-					<p>Contact</p>
+					<a id=contact_link><i class="fa fa-address-card fa-5x" aria-hidden="true"></i>
+					<p>Contact</p></a>
 				</div>
 			</div>
 		</div>
@@ -42,36 +45,60 @@
 	<content>
 		<h1 id=exp_header>Experience</h1>
 		<div id=exp_block>
-			<h3>Software Development Intern</h3> 
-			<h5>athenahealth, Watertown, MA. May 2017-August 2017</h5>
+		<details>
+		<summary>Software Development Intern 
+			<p>athenahealth, Watertown, MA. May 2017-August 2017</p>
+		</summary>
 			<p>During my internship at athenahealth, I worked in a team comprised of two other intern developers and a full time scrum master to add functionality to athena's clinicals software and better integrate it with athenaText, their HIPAA complient text messaging service.</p>
 			<p>My team focused on improving attributions, small taglines at the end of doctors notes that describe the Who What and When of changes to notes. As an example, an attribution could say "Entered by John Smith, MD. |
 			21:03, 07-19-2017".</p>
 			<p>We improved the loading performance of retrieving attributions by a factor of 2 and created a hyperlink on the provider name which would open their athenaText profile page. 
 			<p>The new feature is scheduled to begin alpha testing  in the late fall of 2017.</p>
 			<p>Through this experience, I gained exposure to the agile workflow, full-stack programming, and enterprise software development as well as working and effectively communicating with teams in Watertown; Austin, Texas; and Chennai, India.</p>
+			</details>
 		</div>
 		<div id=exp_block>
-			<h3>Assistant Video Manager</h3> 
-			<h5>Duke University Football Team, Durham NC. October 2015-Present.</h5>
-			<p>As a student assistant, I helped film practices and games for the Duke University Football Team.</p>
+			<details>
+			<summary>
+				Assistant Video Manager
+				<p>Duke University Football Team, Durham NC. October 2015-Present.</p>
+			</summary>
+				<p>As a student assistant, I helped film practices and games for the Duke University Football Team.</p>
+			</details>
 		</div>
 		<div id=exp_block>
-			<h3>Software Development Intern</h3> 
-			<h5>Pixspan, Rockville, Md. June 2016-August 2016</h5>
-			<p>As an intern, I worked on my own to build compression and decompression drivers in C to expand the Pixspan Compression library to work with a new image format.</p>
-			<p>Working for Pixspan gave me a great sense of what its like to work in emerging technologies, as well as what I was capable of working individually.</p>
+			<details>
+			<summary>
+				Software Development Intern
+				<p>Pixspan, Rockville, Md. June 2016-August 2016</p>
+			</summary>
+				<p>As an intern, I worked on my own to build compression and decompression drivers in C to expand the Pixspan Compression library to work with a new image format.</p>
+				<p>Working for Pixspan gave me a great sense of what its like to work in emerging technologies, as well as what I was capable of working individually.</p>
+			</details>
 		</div>
 		<div id=exp_block>
-			<h3>Mobility and Robotic Systems Intern</h3>
-			<h5>Jet Propulsion Laboratory, Pasadena, CA. June 2015-August 2015></h5>
-			<p>Developed initial prototypes for a modular robotic tool changer, scalable for robots of almost any size. My focus was on passing power and high speed communication through a removable joint.</p>
-			<p>Working on a six-intern team, coming from four different schools and five different degree paths, I learned the power of diverse mindsets and the importance of great communication skills when trying to integrate such diversity.</p> 
+			<details>
+			<summary>	
+				Mobility and Robotic Systems Intern
+				<p>Jet Propulsion Laboratory, Pasadena, CA. June 2015-August 2015></p>
+			</summary>
+				<p>Developed initial prototypes for a modular robotic tool changer, scalable for robots of almost any size. My focus was on passing power and high speed communication through a removable joint.</p>
+				<p>Working on a six-intern team, coming from four different schools and five different degree paths, I learned the power of diverse mindsets and the importance of great communication skills when trying to integrate such diversity.</p> 
+			</details>
 		</div>
+		<h1 id=soft_header>Software Projects</h1>
+		<div id=soft_block>
+			
+		</div>
+		<h1 id=contact_header>Contact Me</h1>
+		<div id=contact>
+			<a href="https://www.github.com/walker.eacho"><i class="fa fa-github-square fa-5x" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/eacho.david"><i class="fa fa-facebook-square fa-5x" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/walker-eacho-777866ab/"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+			<a href="mailto:walker.eacho@gmail.com"><p>walker.eacho@gmail.com</p></a>
+			<a href="mailto:walker.eacho@duke.edu"><p>walker.eacho@duke.edu</p></a>		
+			</div>
 	</content>
-	<bullshit>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel tellus vel risus rhoncus semper ut quis diam. Sed fringilla, magna nec placerat tincidunt, eros ipsum lobortis enim, id dignissim massa dui ac dui. Aliquam ac sem sit amet felis rhoncus egestas malesuada in nisi. Curabitur id vehicula elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed quis ligula sem. Sed et molestie nibh.</p>
-	</bullshit>
 </body>
 <script src="js/code_dwe.js"></script>
 
