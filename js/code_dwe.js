@@ -5,8 +5,6 @@ var headerFlag = false;
 /*
 TODOS:
  - Header on click goes back to header
- - If you scroll into header, be able to then scroll out. 
-
  */
 $myWindow.on('scroll', function() {
     if(!headerFlag && $myHeader.hasClass("smaller") && $myWindow.scrollTop()<275) {
